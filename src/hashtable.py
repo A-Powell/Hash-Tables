@@ -109,6 +109,12 @@ class HashTable:
 
         Fill this in.
         '''
+        # old_storage = self.storage.copy()
+        # self.capacity = self.capacity * 2
+        # self.storage = [None] * self.capacity
+
+        # for bucket_item in old_storage:
+        #     self.insert(bucket_item.key, bucket_item.value)
         for i in range(self.capacity):
             self.storage.append(None)
 
